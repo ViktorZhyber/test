@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1529841768725" stop="1529841804685" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>com.fincue.ccloanAutomation.test.ecash.ChangePasswordTest</name>
+    <test-cases>
+        <test-case start="1529841768725" stop="1529841793348" status="passed">
+            <name>testChangePassword</name>
+            <steps>
+                <step start="1529841773818" stop="1529841778272" status="passed">
+                    <name>loginAs[keer0888@yandex.ua, 123456]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1529841778273" stop="1529841778370" status="passed">
+                    <name>assertLogin[keer0888@yandex.ua, +380631353140]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1529841778371" stop="1529841782589" status="passed">
+                    <name>changePassword[123456, 111111]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1529841782591" stop="1529841782641" status="passed">
+                    <name>assertChangePassword[Ваш пароль был успешно изменен]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1529841782642" stop="1529841783559" status="passed">
+                    <name>logoutAs</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1529841783560" stop="1529841789133" status="passed">
+                    <name>loginAs[keer0888@yandex.ua, 111111]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1529841789135" stop="1529841793275" status="passed">
+                    <name>backToOldPassword[Ваш пароль был успешно изменен, 111111, 123456]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="viktor-Latitude-7370"/>
+                <label name="thread" value="27306@viktor-Latitude-7370.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="JUnit"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

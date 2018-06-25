@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1529841793349" stop="1529841804710" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>com.fincue.ccloanAutomation.test.ecash.CreditHistoryTest</name>
+    <test-cases>
+        <test-case start="1529841793349" stop="1529841804429" status="passed">
+            <name>testCreditHistory</name>
+            <steps>
+                <step start="1529841795979" stop="1529841800516" status="passed">
+                    <name>loginAs[keer0888@yandex.ua, 123456]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1529841800517" stop="1529841800620" status="passed">
+                    <name>assertLogin[keer0888@yandex.ua, +380631353140]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1529841800621" stop="1529841804324" status="passed">
+                    <name>assertCreditHistory</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="viktor-Latitude-7370"/>
+                <label name="thread" value="27306@viktor-Latitude-7370.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="JUnit"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

@@ -1,0 +1,6 @@
+com/fincue/ccloanAutomation/core/BaseConfigurationTest.class
+com/fincue/ccloanAutomation/pages/ecash/Login.class
+com/fincue/ccloanAutomation/core/ChromeConfigurationTest.class
+com/fincue/ccloanAutomation/pages/ecash/UserInformation.class
+com/fincue/ccloanAutomation/testdata/TestData.class
+com/fincue/ccloanAutomation/core/Drivers/ChromeDriverSetup.class

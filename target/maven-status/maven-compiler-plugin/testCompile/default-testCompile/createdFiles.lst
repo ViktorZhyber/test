@@ -1,0 +1,4 @@
+com/fincue/ccloanAutomation/test/ecash/ChangePasswordTest.class
+com/fincue/ccloanAutomation/test/ecash/EcashLoginTest.class
+com/fincue/ccloanAutomation/test/suites/TestSuiteEcash.class
+com/fincue/ccloanAutomation/test/ecash/CreditHistoryTest.class
