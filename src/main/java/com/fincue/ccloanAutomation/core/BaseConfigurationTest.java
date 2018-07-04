@@ -15,11 +15,21 @@ public class BaseConfigurationTest {
 
         chromeCT = new ChromeConfigurationTest();
     }
+    @Before
+    public void setUpBrowser() throws MalformedURLException {
+
+        chromeCT.setUpBrowser();
+    }
+
+    @After
+    public void tearDown()throws IOException {
+        chromeCT.tearDown();
+    }
+
     @AfterClass
     public static void closeDriver() {
 
         chromeCT.closeDriver();
-
     }
 
 
@@ -47,13 +57,5 @@ public class BaseConfigurationTest {
      */
 
 
-    @Before
-    public void setUpBrowser() throws MalformedURLException {
 
-        chromeCT.setUpBrowser();
-    }
-    @After
-    public void tearDown()throws IOException {
-        chromeCT.tearDown();
-    }
 }
