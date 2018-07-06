@@ -39,6 +39,6 @@ public class ChromeDriverSetup {
 
 //        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 //        capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
     }
 }
