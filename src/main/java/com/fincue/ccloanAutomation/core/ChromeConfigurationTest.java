@@ -27,7 +27,7 @@ public class ChromeConfigurationTest {
 
         Configuration.timeout = 8000;
         getWebDriver().manage().deleteAllCookies();
-        getWebDriver().manage().window().maximize();
+        //getWebDriver().manage().window().maximize();
 
         open(ecashClientURL);
     }

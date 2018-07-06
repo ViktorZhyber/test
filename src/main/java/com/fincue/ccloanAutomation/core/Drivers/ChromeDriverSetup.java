@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -16,7 +17,7 @@ public class ChromeDriverSetup {
 
     public ChromeDriverSetup() {
         //Setup Chromedriver
-        //System.setProperty("webdriver.chrome.driver", ".\\helperfiles\\chromedriver");
+       // System.setProperty("webdriver.chrome.driver", ".\\helperfiles\\chromedriver");
         ChromeDriverManager.getInstance().setup();
 
         ChromeOptions options = new ChromeOptions();
@@ -36,15 +37,6 @@ public class ChromeDriverSetup {
 
         DesiredCapabilities capabilities = DesiredCapabilities.chrome();
         capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-        driver = new ChromeDriver(capabilities);
-
-
-//        ChromeDriverManager.getInstance().setup();
-//        Configuration.browser = "chrome";
-        //options.addArguments("headless","disable-gpu");
-//        For Windows
-//        System.setProperty("webdriver.chrome.driver", "./helperfiles/chromedriver.exe");
-
-
+        driver = new ChromeDriver(options);
     }
 }
