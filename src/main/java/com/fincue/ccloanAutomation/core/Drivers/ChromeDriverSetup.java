@@ -35,8 +35,8 @@ public class ChromeDriverSetup {
         //options.addArguments("headless"); //make chrome starting without UI;
         //options.addArguments("disable-gpu"); //make chrome starting without UI;
 
-        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-        capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+//        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+//        capabilities.setCapability(ChromeOptions.CAPABILITY, options);
         driver = new ChromeDriver(options);
     }
 }
