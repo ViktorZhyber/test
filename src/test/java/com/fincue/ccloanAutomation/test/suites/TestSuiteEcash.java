@@ -8,7 +8,10 @@ import org.junit.runners.Suite;
 @Suite.SuiteClasses({
         EcashLoginTest.class,
         ChangePasswordTest.class,
-        CreditHistoryTest.class
+        CreditHistoryTest.class,
+        HowToPayOffTest.class,
+        HowToTakeTest.class,
+        ContactsTest.class
 })
 public class TestSuiteEcash {
 }
