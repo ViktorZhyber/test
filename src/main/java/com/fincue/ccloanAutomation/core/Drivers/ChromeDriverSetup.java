@@ -1,6 +1,7 @@
 package com.fincue.ccloanAutomation.core.Drivers;
 
 
+import com.codeborne.selenide.Configuration;
 import io.github.bonigarcia.wdm.ChromeDriverManager;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -20,6 +21,7 @@ public class ChromeDriverSetup {
        // System.setProperty("webdriver.chrome.driver", ".\\helperfiles\\chromedriver");
         ChromeDriverManager.getInstance().setup();
 
+
         ChromeOptions options = new ChromeOptions();
         Map<String, Object> prefs = new HashMap<>();
         prefs.put("credentials_enable_service", false);
@@ -27,7 +29,7 @@ public class ChromeDriverSetup {
         options.setExperimentalOption("prefs", prefs);
 
         //options.addArguments("-incognito");
-        options.addArguments("start-maximized");
+        //options.addArguments("start-maximized");
         options.addArguments("disable-extensions");
         options.addArguments("disable-infobars");
         options.addArguments("ignore-certificate-errors"); //disable certification verification;
@@ -37,6 +39,6 @@ public class ChromeDriverSetup {
 
 //        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 //        capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-        driver = new ChromeDriver(options);
+        driver = new ChromeDriver();
     }
 }

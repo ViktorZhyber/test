@@ -2,6 +2,7 @@ package com.fincue.ccloanAutomation.core;
 
 import com.codeborne.selenide.Configuration;
 import com.fincue.ccloanAutomation.core.Drivers.ChromeDriverSetup;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.io.IOException;
@@ -26,7 +27,10 @@ public class ChromeConfigurationTest {
         setWebDriver(driver);
 
         Configuration.timeout = 8000;
+        Configuration.startMaximized = false;
+        //Configuration.browserSize = "1900x1200";
         getWebDriver().manage().deleteAllCookies();
+        getWebDriver().manage().window().setSize(new Dimension(1920, 1200));
         //getWebDriver().manage().window().maximize();
 
         open(ecashClientURL);
